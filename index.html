@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Life Hacker Academy - Master AI for Daily Life</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#d946ef',
+              secondary: '#0d9488',
+            }
+          }
+        }
+      }
+    </script>
+</head>
+<body class="bg-white font-sans antialiased overflow-x-hidden">
+  <!-- Cursor Animation -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-outline"></div>
+
+  <!-- Hero Section -->
+  <section class="relative h-screen overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-r from-white via-fuchsia-50 to-white z-0"></div>
+    <div class="absolute top-0 left-0 w-full h-full opacity-10 z-0">
+      <div class="grid grid-cols-12 grid-rows-6 w-full h-full">
+        <div class="col-span-1 row-span-1 border-r border-b border-fuchsia-50"></div>
+        <div class="col-span-1 row-span-1 border-r border-b border-fuchsia-50"></div>
+        <!-- Repeat this pattern to create a grid background -->
+      </div>
+    </div>
+
+    <div class="relative z-10 h-full flex flex-col justify-center px-6 md:px-12 lg:px-24">
+      <div class="mb-8">
+        <span class="text-fuchsia-500 font-bold tracking-wider">TRANSFORM YOUR LIFE WITH AI</span>
+        <h1 class="text-5xl md:text-7xl font-bold mt-4 mb-6 text-gray-900 leading-tight">
+          Master <span class="text-fuchsia-500">AI-Powered</span><br>Life Hacks
+        </h1>
+        <p class="text-xl md:text-2xl text-gray-600 max-w-2xl mb-10">
+          Learn how to automate mundane tasks, boost productivity, and revolutionize your daily routine with cutting-edge AI tools.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="#enroll" class="bg-fuchsia-500 hover:bg-fuchsia-600 text-white font-bold py-4 px-8 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-fuchsia-200">
+            Enroll Now
+          </a>
+          <a href="#features" class="border-2 border-fuchsia-500 text-fuchsia-500 hover:bg-fuchsia-50 font-bold py-4 px-8 rounded-full transition-all duration-300 transform hover:scale-105">
+            Explore Course
+          </a>
+        </div>
+      </div>
+      <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <i data-feather="chevron-down" class="text-fuchsia-500 w-8 h-8"></i>
+      </div>
+    </div>
+  </section>
+
+  <!-- Logo Cloud -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-6">
+      <p class="text-center text-gray-500 mb-12">Trusted by students from companies like</p>
+      <div class="flex flex-wrap justify-center items-center gap-12 md:gap-24 opacity-70">
+        <img src="http://static.photos/technology/320x240/1" alt="Tech Company" class="h-8 grayscale hover:grayscale-0 transition-all duration-300">
+        <img src="http://static.photos/finance/320x240/2" alt="Finance Company" class="h-8 grayscale hover:grayscale-0 transition-all duration-300">
+        <img src="http://static.photos/education/320x240/3" alt="Education Company" class="h-12 grayscale hover:grayscale-0 transition-all duration-300">
+        <img src="http://static.photos/health/320x240/4" alt="Health Company" class="h-10 grayscale hover:grayscale-0 transition-all duration-300">
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16">
+        <span class="text-teal-500 font-bold tracking-wider">WHAT YOU'LL LEARN</span>
+        <h2 class="text-4xl font-bold mt-4 mb-6 text-gray-900">Supercharge Your Daily Life</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Our comprehensive curriculum covers all aspects of integrating AI into your personal and professional life.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Feature 1 -->
+        <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border-l-4 border-fuchsia-500">
+          <div class="w-12 h-12 bg-fuchsia-100 rounded-full flex items-center justify-center mb-6">
+            <i data-feather="zap" class="text-fuchsia-500 w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3 text-gray-900">Automation Mastery</h3>
+          <p class="text-gray-600">
+            Learn to automate repetitive tasks like email management, scheduling, and data organization using AI tools.
+          </p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border-l-4 border-teal-500">
+          <div class="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center mb-6">
+            <i data-feather="clock" class="text-teal-500 w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3 text-gray-900">Time Optimization</h3>
+          <p class="text-gray-600">
+            Discover AI techniques to reclaim hours in your week by optimizing your workflow and decision making.
+          </p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border-l-4 border-fuchsia-500">
+          <div class="w-12 h-12 bg-fuchsia-100 rounded-full flex items-center justify-center mb-6">
+            <i data-feather="bar-chart-2" class="text-fuchsia-500 w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3 text-gray-900">Smart Decision Making</h3>
+          <p class="text-gray-600">
+            Leverage AI for data-driven insights that enhance your personal finance, health, and career choices.
+          </p>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border-l-4 border-teal-500">
+          <div class="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center mb-6">
+            <i data-feather="message-square" class="text-teal-500 w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3 text-gray-900">AI Communication</h3>
+          <p class="text-gray-600">
+            Master AI-powered writing assistants to craft perfect emails, reports, and social media content effortlessly.
+          </p>
+        </div>
+
+        <!-- Feature 5 -->
+        <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border-l-4 border-fuchsia-500">
+          <div class="w-12 h-12 bg-fuchsia-100 rounded-full flex items-center justify-center mb-6">
+            <i data-feather="home" class="text-fuchsia-500 w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3 text-gray-900">Smart Home Integration</h3>
+          <p class="text-gray-600">
+            Transform your living space with AI-powered home automation for security, energy efficiency, and comfort.
+          </p>
+        </div>
+
+        <!-- Feature 6 -->
+        <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border-l-4 border-teal-500">
+          <div class="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center mb-6">
+            <i data-feather="user" class="text-teal-500 w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3 text-gray-900">Personal AI Assistant</h3>
+          <p class="text-gray-600">
+            Build and customize your own AI assistant to handle research, reminders, and personalized recommendations.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="py-20 bg-gradient-to-r from-fuchsia-50 to-teal-50">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16">
+        <span class="text-fuchsia-500 font-bold tracking-wider">SUCCESS STORIES</span>
+        <h2 class="text-4xl font-bold mt-4 mb-6 text-gray-900">What Our Students Say</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Testimonial 1 -->
+        <div class="bg-white p-8 rounded-xl shadow-md">
+          <div class="flex items-center mb-4">
+            <div class="w-12 h-12 rounded-full bg-gray-200 overflow-hidden">
+              <img src="http://static.photos/people/200x200/1" alt="Sarah J." class="w-full h-full object-cover">
+            </div>
+            <div class="ml-4">
+              <h4 class="font-bold text-gray-900">Sarah J.</h4>
+              <p class="text-gray-500">Marketing Director</p>
+            </div>
+          </div>
+          <p class="text-gray-600 italic">
+            "This course saved me 10+ hours weekly! The email automation module alone was worth the investment."
+          </p>
+          <div class="mt-4 flex text-yellow-400">
+            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="bg-white p-8 rounded-xl shadow-md">
+          <div class="flex items-center mb-4">
+            <div class="w-12 h-12 rounded-full bg-gray-200 overflow-hidden">
+              <img src="http://static.photos/people/200x200/2" alt="Michael T." class="w-full h-full object-cover">
+            </div>
+            <div class="ml-4">
+              <h4 class="font-bold text-gray-900">Michael T.</h4>
+              <p class="text-gray-500">Small Business Owner</p>
+            </div>
+          </div>
+          <p class="text-gray-600 italic">
+            "I automated 80% of my admin work and grew my business by 30% in just 3 months after taking this course."
+          </p>
+          <div class="mt-4 flex text-yellow-400">
+            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="bg-white p-8 rounded-xl shadow-md">
+          <div class="flex items-center mb-4">
+            <div class="w-12 h-12 rounded-full bg-gray-200 overflow-hidden">
+              <img src="http://static.photos/people/200x200/3" alt="Priya K." class="w-full h-full object-cover">
+            </div>
+            <div class="ml-4">
+              <h4 class="font-bold text-gray-900">Priya K.</h4>
+              <p class="text-gray-500">Freelance Writer</p>
+            </div>
+          </div>
+          <p class="text-gray-600 italic">
+            "The AI writing tools section tripled my content output while improving quality. Game changer!"
+          </p>
+          <div class="mt-4 flex text-yellow-400">
+            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+            <i data-feather="star" class="w-4 h-4 fill-current"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="enroll" class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16">
+        <span class="text-teal-500 font-bold tracking-wider">INVEST IN YOUR FUTURE</span>
+        <h2 class="text-4xl font-bold mt-4 mb-6 text-gray-900">Simple, Transparent Pricing</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Choose the plan that fits your needs. All plans include lifetime access to course materials.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <!-- Basic Plan -->
+        <div class="bg-white p-8 rounded-xl shadow-lg border-2 border-gray-100 hover:border-fuchsia-300 transition-all duration-300 transform hover:scale-105">
+          <div class="mb-6">
+            <h3 class="text-2xl font-bold text-gray-900 mb-2">Starter</h3>
+            <p class="text-gray-600">Perfect for beginners</p>
+          </div>
+          <div class="mb-6">
+            <span class="text-4xl font-bold text-gray-900">$97</span>
+            <span class="text-gray-500">one-time</span>
+          </div>
+          <ul class="mb-8 space-y-3">
+            <li class="flex items-center text-gray-600">
+              <i data-feather="check" class="w-5 h-5 text-teal-500 mr-2"></i>
+              Core Modules (20 lessons)
+            </li>
+            <li class="flex items-center text-gray-600">
+              <i data-feather="check" class="w-5 h-5 text-teal-500 mr-2"></i>
+              Community Access
+            </li>
+            <li class="flex items-center text-gray-400">
+              <i data-feather="x" class="w-5 h-5 text-gray-300 mr-2"></i>
+              Premium Tools Guide
+            </li>
+            <li class="flex items-center text-gray-400">
+              <i data-feather="x" class="w-5 h-5 text-gray-300 mr-2"></i>
+              Live Q&A Sessions
+            </li>
+          </ul>
+          <a href="#" class="block w-full bg-gray-100 hover:bg-gray-200 text-gray-800 font-bold py-3 px-6 rounded-lg text-center transition-all duration-300">
+            Get Started
+          </a>
+        </div>
+
+        <!-- Popular Plan -->
+        <div class="bg-white p-8 rounded-xl shadow-2xl border-2 border-fuchsia-300 relative transform hover:scale-105 transition-all duration-300">
+          <div class="absolute top-0 right-0 bg-fuchsia-500 text-white text-xs font-bold px-3 py-1 rounded-bl-lg rounded-tr-lg">
+            MOST POPULAR
+          </div>
+          <div class="mb-6">
+            <h3 class="text-2xl font-bold text-gray-900 mb-2">Pro</h3>
+            <p class="text-gray-600">Best value for professionals</p>
+          </div>
+          <div class="mb-6">
+            <span class="text-4xl font-bold text-gray-900">$197</span>
+            <span class="text-gray-500">one-time</span>
+          </div>
+          <ul class="mb-8 space-y-3">
+            <li class="flex items-center text-gray-600">
+              <i data-feather="check" class="w-5 h-5 text-teal-500 mr-2"></i>
+              All Core Modules (35 lessons)
+            </li>
+            <li class="flex items-center text-gray-600">
+              <i data-feather="check" class="w-5 h-5 text-teal-500 mr-2"></i>
+              Premium Community Access
+            </li>
+            <li class="flex items-center text-gray-600">
+              <i data-feather="check" class="w-5 h-5 text-teal-500 mr-2"></i>
+              Exclusive Tools Guide ($97 value)
+            </li>
+            <li class="flex items-center text-gray-600">
+              <i data-feather="check" class="w-5 h-5 text-teal-500 mr-2"></i>
+              4 Live Q&A Sessions
+            </li>
+          </ul>
+          <a href="#" class="block w-full bg-fuchsia-500 hover:bg-fuchsia-600 text-white font-bold py-3 px-6 rounded-lg text-center transition-all duration-300">
+            Enroll Now
+          </a>
+        </div>
+
+        <!-- Premium Plan -->
+        <div class="bg-white p-8 rounded-xl shadow-lg border-2 border-gray-100 hover:border-teal-300 transition-all duration-300 transform hover:scale-105">
+          <div class="mb-6">
+            <h3 class="text-2xl font-bold text-gray-900 mb-2">VIP</h3>
+            <p class="text-gray-600">For serious learners</p>
+          </div>
+          <div class="mb-6">
+            <span class="text-4xl font-bold text-gray-900">$497</span>
+            <span class="text-gray-500">one-time</span>
+          </div>
+          <ul class="mb-8 space-y-3">
+            <li class="flex items-center text-gray-600">
+              <i data-feather="check" class="w-5 h-5 text-teal-500 mr-2"></i>
+              Everything in Pro
+            </li>
+            <li class="flex items-center text-gray-600">
+              <i data-feather="check" class="w-5 h-5 text-teal-500 mr-2"></i>
+              1:1 Coaching Session (60 min)
+            </li>
+            <li class="flex items-center text-gray-600">
+              <i data-feather="check" class="w-5 h-5 text-teal-500 mr-2"></i>
+              Custom AI Workflow Setup
+            </li>
+            <li class="flex items-center text-gray-600">
+              <i data-feather="check" class="w-5 h-5 text-teal-500 mr-2"></i>
+              Priority Support
+            </li>
+          </ul>
+          <a href="#" class="block w-full bg-teal-500 hover:bg-teal-600 text-white font-bold py-3 px-6 rounded-lg text-center transition-all duration-300">
+            Go VIP
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6 max-w-4xl">
+      <div class="text-center mb-16">
+        <span class="text-teal-500 font-bold tracking-wider">HAVE QUESTIONS?</span>
+        <h2 class="text-4xl font-bold mt-4 mb-6 text-gray-900">Frequently Asked Questions</h2>
+      </div>
+
+      <div class="space-y-4">
+        <!-- FAQ 1 -->
+        <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+          <button class="faq-toggle w-full flex justify-between items-center text-left">
+            <h3 class="text-lg font-semibold text-gray-900">Do I need any technical skills to take this course?</h3>
+            <i data-feather="plus" class="text-fuchsia-500 w-5 h-5"></i>
+          </button>
+          <div class="faq-content mt-3 hidden">
+            <p class="text-gray-600">
+              Not at all! The course is designed for complete beginners. We start with the fundamentals and gradually build up to more advanced concepts. Our step-by-step approach ensures anyone can follow along and implement what they learn.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+          <button class="faq-toggle w-full flex justify-between items-center text-left">
+            <h3 class="text-lg font-semibold text-gray-900">How much time will I need to dedicate?</h3>
+            <i data-feather="plus" class="text-fuchsia-500 w-5 h-5"></i>
+          </button>
+          <div class="faq-content mt-3 hidden">
+            <p class="text-gray-600">
+              The course is self-paced with about 15 hours of core content. Most students complete it in 2-4 weeks by dedicating an hour a day. However, you'll start seeing practical benefits from the very first lessons that you can implement immediately.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+          <button class="faq-toggle w-full flex justify-between items-center text-left">
+            <h3 class="text-lg font-semibold text-gray-900">What if I don't see results?</h3>
+            <i data-feather="plus" class="text-fuchsia-500 w-5 h-5"></i>
+          </button>
+          <div class="faq-content mt-3 hidden">
+            <p class="text-gray-600">
+              We offer a 30-day money-back guarantee. If you complete the first 5 lessons and don't find at least one technique that saves you time or improves your life, we'll refund your payment, no questions asked.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+          <button class="faq-toggle w-full flex justify-between items-center text-left">
+            <h3 class="text-lg font-semibold text-gray-900">Will the course materials be updated?</h3>
+            <i data-feather="plus" class="text-fuchsia-500 w-5 h-5"></i>
+          </button>
+          <div class="faq-content mt-3 hidden">
+            <p class="text-gray-600">
+              Yes! AI tools evolve rapidly, and we commit to updating the course at least quarterly. All students receive free lifetime access to updated materials, including new modules we add to the curriculum.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-12 text-center">
+        <p class="text-gray-600 mb-6">Still have questions? We're happy to help!</p>
+        <a href="mailto:hello@ailifehacker.com" class="inline-block bg-fuchsia-500 hover:bg-fuchsia-600 text-white font-bold py-3 px-8 rounded-full transition-all duration-300">
+          Contact Us
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-20 bg-gradient-to-r from-fuchsia-500 to-teal-500 text-white">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold mb-6">Ready to Transform Your Life with AI?</h2>
+      <p class="text-xl mb-10 max-w-2xl mx-auto opacity-90">
+        Join thousands of students who have already saved hundreds of hours and transformed their daily routines.
+      </p>
+      <a href="#enroll" class="inline-block bg-white hover:bg-gray-100 text-fuchsia-600 font-bold py-4 px-10 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg">
+        Enroll Now - Start Today
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="container mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <h3 class="text-xl font-bold mb-4">AI Life Hacker</h3>
+          <p class="text-gray-400">
+            Empowering individuals to work smarter, not harder through practical AI applications.
+          </p>
+        </div>
+        <div>
+          <h4 class="font-bold mb-4">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="#features" class="text-gray-400 hover:text-white transition-colors">Course Features</a></li>
+            <li><a href="#enroll" class="text-gray-400 hover:text-white transition-colors">Pricing</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Testimonials</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold mb-4">Resources</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Blog</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Free Tools</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Community</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Support</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold mb-4">Connect With Us</h4>
+          <div class="flex space-x-4 mb-4">
+            <a href="#" class="text-gray-400 hover:text-white transition-colors">
+              <i data-feather="twitter" class="w-5 h-5"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white transition-colors">
+              <i data-feather="facebook" class="w-5 h-5"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white transition-colors">
+              <i data-feather="instagram" class="w-5 h-5"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white transition-colors">
+              <i data-feather="linkedin" class="w-5 h-5"></i>
+            </a>
+          </div>
+          <p class="text-gray-400">hello@ailifehacker.com</p>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+        <p>© 2023 AI Life Hacker Academy. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    feather.replace();
+    
+    // Smooth scrolling for all links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    // FAQ toggle functionality
+    document.querySelectorAll('.faq-toggle').forEach(button => {
+      button.addEventListener('click', () => {
+        const content = button.nextElementSibling;
+        const icon = button.querySelector('i');
+        
+        if (content.classList.contains('hidden')) {
+          content.classList.remove('hidden');
+          icon.setAttribute('data-feather', 'minus');
+        } else {
+          content.classList.add('hidden');
+          icon.setAttribute('data-feather', 'plus');
+        }
+        feather.replace();
+      });
+    });
+  </script>
+<script src="https://huggingface.co/deepsite/deepsite-badge.js"></script>
+</body>
+</html>
